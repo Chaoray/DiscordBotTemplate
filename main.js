@@ -29,11 +29,11 @@ for (const file of eventFiles) {
         } else {
             client.on(event.name, (...args) => event.execute(...args));
         }
+
+        console.info(`[EVENT] load ${event.name}`);
     } else {
         console.error(`[EVENT] Event ${filePath} is missing a required property "name" or "execute"`);
     }
-
-    console.info(`[EVENT] load ${event.name}`);
 }
 
 client.messageCommands = new Collection();
