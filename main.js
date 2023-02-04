@@ -32,7 +32,7 @@ for (const file of eventFiles) {
 
         console.info(`[EVENT] load ${event.name}`);
     } else {
-        console.error(`[EVENT] Event ${filePath} is missing a required property "name" or "execute"`);
+        console.error(`[EVENT] ${filePath} is missing a required property "name" or "execute"`);
     }
 }
 
@@ -49,7 +49,7 @@ for (const file of commandFiles) {
         client.messageCommands.set(command.name, command);
         console.info(`[COMMAND] load ${command.name}`);
     } else {
-        console.error(`[COMMAND] Command ${filePath} is missing a required property "name" or "execute"`);
+        console.error(`[COMMAND] ${filePath} is missing a required property "name" or "execute"`);
     }
 }
 
@@ -67,7 +67,7 @@ for (const file of interactionFiles) {
         client.slashCommands.set(interaction.data.name, interaction);
         console.info(`[INTERACTION] load ${interaction.name}`);
     } else {
-        console.error(`[INTERACTION] Interaction ${filePath} is missing a required property "data" or "execute"`);
+        console.error(`[INTERACTION] ${filePath} is missing a required property "data" or "execute"`);
     }
 }
 
