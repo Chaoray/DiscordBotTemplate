@@ -49,7 +49,7 @@ for (const file of commandFiles) {
         client.messageCommands.set(command.name, command);
         console.info(`[COMMAND] load ${command.name}`);
     } else {
-        console.error(`[COMMAND] Interaction ${filePath} is missing a required property "name" or "execute"`);
+        console.error(`[COMMAND] Command ${filePath} is missing a required property "name" or "execute"`);
     }
 }
 
