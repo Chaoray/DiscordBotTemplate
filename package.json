@@ -1,8 +1,8 @@
 {
-  "name": "weather-bot",
+  "name": "dc-bot-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "run": "node main.js"
   },
